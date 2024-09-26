@@ -3,7 +3,7 @@ Deploy Prometheus on a Kubernetes Cluster using Helm Chart
 
 - Git clone this repository
 
-- Create a prometheus namespace
+- Create a prometheus namespace in the Kubernetes Cluster
 ```bash
 kubectl create namespace prometheus
 ```
