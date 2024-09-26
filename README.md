@@ -9,7 +9,7 @@ kubectl create namespace prometheus
 ```
 
 - Create a storageClass using nfs-sub-external provisioner
-  ```bash
+```bash
 helm install nfs-subdir-external-provisioner-prometheus \
 nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
 --set nfs.server=172.16.44.32 \
@@ -21,7 +21,7 @@ nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
 --set clusterRoleBinding.create=true \
 --set clusterRoleBinding.name=nfs-subdir-external-provisioner-binding-prometheus \
 -n prometheus
-  ```
+```
 
 - Run this command to deploy Prometheus Helm Chart
 ```bash
