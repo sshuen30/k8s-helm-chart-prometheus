@@ -8,7 +8,7 @@ Deploy Prometheus on a Kubernetes Cluster using Helm Chart
 kubectl create namespace prometheus
 ```
 
-- Create a storageClass using nfs-sub-external provisioner
+- Create a storageClass using nfs-subdir-ext provisioner
 ```bash
 helm install nfs-subdir-external-provisioner-prometheus \
 nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
