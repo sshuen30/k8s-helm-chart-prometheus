@@ -1262,7 +1262,7 @@ alertmanager:
 
   persistence:
     size: 2Gi
-    storageClass: nfs-client-prometheus  # Specify the storage class here (replace with the appropriate StorageClass)
+    storageClass: nfs-32  # Specify the storage class here (replace with the appropriate StorageClass)
     accessModes:          # Define access modes (optional, defaults to ReadWriteOnce)
       - ReadWriteOnce
 
