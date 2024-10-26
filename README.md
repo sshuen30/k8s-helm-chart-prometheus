@@ -25,6 +25,7 @@ nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
 
 - Run this command to deploy Prometheus Helm Chart
 ```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm install prometheus prometheus-community/prometheus -f custom-resources-prometheus.yaml --namespace prometheus
 ```
 
